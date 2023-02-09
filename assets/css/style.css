@@ -1,0 +1,259 @@
+@font-face {
+    font-family: "SFPro";
+    src: url(/assets/font/SFProDisplay-Regular.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    font-family: "SFPro";
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background-color: #d8e6f6;
+}
+
+.profile-info, .main-feed, .friends-community{
+    /* flex-grow: 1; */
+}
+
+/* Navbar */
+
+nav, .logo-link, .search-and-profile, ul,nav .user-profile, .fans-number{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    width: 100vw;
+    background-color: #fcfefe;   
+    height: 5.4vh;
+    justify-content: center;
+    gap: 8em;
+    /* box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75); */
+}
+.logo-link{
+    gap: 2em;
+    /* overflow: hidden; */
+}
+
+.logo-link h1, nav ul>li:hover, .edit-profile, .logo-link > ul li:nth-child(2), .more{
+    color: #d30069d1;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+ul{
+    gap: 1em;
+    list-style: none;
+}
+
+.search-and-profile{
+    gap: 1.5em;
+}
+
+.search-and-profile input{
+    border: none;
+    border-radius: 7px;
+    background-color: #eff3f6;
+    color: #969696;
+    padding: 7px;
+    width: 19em;
+   
+}
+
+.user-profile{
+    gap: .5em;
+}
+.user-profile img:nth-child(1){
+    border-radius: 50%;
+    width: 32px;
+}
+.user-profile img:nth-child(3){
+    margin-top: 3px;
+    width: 20px;
+}
+
+/* /////////// */
+
+
+
+.main-page{
+    justify-content: center;
+    margin-top: 1.8em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.7em;
+    margin: 15px;
+}
+
+.card-box{
+    background-color: #fcffff;
+    border-radius: 10px;
+}
+
+
+/* Estilo de Profile info  */
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.main-info img{
+    width: 180px;
+    border-radius: 50%;
+    padding: 3px;
+    border: 3px solid #d30069d1;
+    margin-bottom: 16px;
+}
+.main-info{
+    padding: 20px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit-profile{
+    display: flex;
+    /* flex-grow: 1; */
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+/* Estilo Main content */
+
+.main-feed{
+    display: flex;
+    flex-direction: column;
+    padding: 17px;
+    gap: 1.5em;
+    width: 400px;
+    min-width: 300px;
+}
+
+blockquote{
+    background-color: #d5d0d0d9;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.general-info ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.profile-stats{
+    display: flex;
+    gap: 1.6em;
+
+}
+
+.profile-stats > *{
+    display: flex;
+    gap: .2em;
+    flex-direction: column;
+}
+
+.fans-number{
+    gap: .2em;
+}
+.interaction-icon{
+    width: 15px;
+    /* outline: auto; */
+}
+
+.list-label{
+    color: #7a7979;
+}
+
+.music-boxes, .movies-boxes{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.genre, .movie {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ED2590 ;
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+
+
+/* Friends adn community box  */
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.friends-community{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.friends-box, .community-box{
+    padding: .9em;
+    /* width:300px; */
+}
+
+/* Friends  */
+
+.friend p{
+    text-align: center;
+}
+
+.friends-grid{
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas: "friend-1 friend-2 friend-3" "friend-1 friend-2 friend-3" "friend-1 friend-2 friend-3";
+    grid-template-columns: 5.2em 5.2em 5.2em;
+    grid-template-rows: 6.7em 6.7em 6.7em;
+}
+.friend img{
+    border-radius: 50%;
+    width: 56px;
+}
+.friend{
+    /* outline: auto; */
+    /* margin: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Community  */
+
+.community p{
+    text-align: center;
+}
+
+.communities-grid{
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas: "community-1 community-2 community-3" "community-1 community-2 community-3" "community-1 community-2 community-3";
+    grid-template-columns: 5.2em 5.2em 5.2em;
+    grid-template-rows: 6.7em 6.7em 6.7em;
+}
+.community img{
+    width: 52px;
+    border-radius: 10px;
+}
+.community{
+    /* outline: auto; */
+    /* margin: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
